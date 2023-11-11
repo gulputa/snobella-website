@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* HEADER */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.mobil {
+  display: flex;
+  gap: 10px;
+}
+.about {
+  display: flex;
+  gap: 20px;
+}
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  position: relative;
+}
+.header-center input {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  border: transparent;
+  background-color: #f7f9fc;
+}
+.fa-magnifying-glass {
+ position: absolute;
+  left: 50%;
+}
+.swich{
+    display: flex;
+    gap: 30px;
+}
+.head nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 30px;
+  gap: 50px;
+}
+.head nav ul li a {
+  color: black;
+}
+@media screen and (max-width: 760px) {
+    .header-center{
+        display: none;
+    }
+    .header-top{
+        display: none;
+    }
+    .header-bottom{
+        display: none;
+    }
+}
+/* PRODUCT */
+.bg-2{
+    background-color: #FFE2E0;
+}
+.product{
+    display: flex;
+    padding: 50px;
+
+}
+.one{
+    color: red;
+    font-size: 24px;
+    line-height: 40.8px;
+    font-weight: 500;
+}
+.left{
+    padding: 60px;
+}
+.product h1{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.two{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 30px;
+}
+.product .left button{
+    width: 192px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #206363;
+    color: #FFFFFF;
+    border: transparent;
+}
+.product .left button:hover{
+    background-color:transparent;
+    color:  #206363;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.right{
+    width: 642px;
+    height: 535px;
+}
+@media screen and (max-width: 760px) {
+    .product{
+        display: none;
+    }
+}
+/* DELIVERY */
+.bg-3{
+    background-color: #F7F7F7;
+}
+.delivery{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.icon{
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 760px){
+  .delivery{
+    display: none;
+  }
+}
+/* BAG'S */
+.bags{
+  display: flex;
+  padding: 70px;
+}
+.box{
+  display: flex;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  width: 30%;
+  gap: 40px;
+}
+.box img{
+  width: 100%;
+}
+
+@media screen and (max-width: 760px){
+  .bags{
+    display: block;
+  }
+}
+/* Featured Products */
