@@ -10,6 +10,9 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.bg-1 {
+  background-color: #007878;
+}
 /* HEADER */
 .header-top {
   display: flex;
@@ -27,8 +30,9 @@
 .header-center {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   position: relative;
+  padding: 30px;
 }
 .header-center input {
   width: 300px;
@@ -36,14 +40,15 @@
   border-radius: 8px;
   border: transparent;
   background-color: #f7f9fc;
+  padding: 20px;
 }
 .fa-magnifying-glass {
- position: absolute;
+  position: absolute;
   left: 50%;
 }
-.swich{
-    display: flex;
-    gap: 30px;
+.swich {
+  display: flex;
+  gap: 30px;
 }
 .head nav ul {
   display: flex;
@@ -56,107 +61,266 @@
   color: black;
 }
 @media screen and (max-width: 760px) {
-    .header-center{
-        display: none;
-    }
-    .header-top{
-        display: none;
-    }
-    .header-bottom{
-        display: none;
-    }
+  .header-center {
+    display: none;
+  }
+  .header-top {
+    display: none;
+  }
+  .header-bottom {
+    display: none;
+  }
 }
 /* PRODUCT */
-.bg-2{
-    background-color: #FFE2E0;
+.bg-2 {
+  background-color: #ffe2e0;
 }
-.product{
-    display: flex;
-    padding: 50px;
+.product {
+  display: flex;
+  padding: 50px;
+}
+.one {
+  color: red;
+  font-size: 24px;
+  line-height: 40.8px;
+  font-weight: 500;
+}
+.left {
+  padding: 60px;
+}
+.product h1 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.two {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 30px;
+}
+.product .left button {
+  width: 192px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #206363;
+  color: #ffffff;
+  border: transparent;
+}
+.product .left button:hover {
+  background-color: transparent;
+  color: #206363;
+  transition: all 1s;
+  cursor: pointer;
+  transform: scale(1.2);
+}
 
-}
-.one{
-    color: red;
-    font-size: 24px;
-    line-height: 40.8px;
-    font-weight: 500;
-}
-.left{
-    padding: 60px;
-}
-.product h1{
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 700;
-}
-.two{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    padding: 30px;
-}
-.product .left button{
-    width: 192px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: #206363;
-    color: #FFFFFF;
-    border: transparent;
-}
-.product .left button:hover{
-    background-color:transparent;
-    color:  #206363;
-    transition: all 1s;
-    cursor: pointer;
-}
-
-.right{
-    width: 642px;
-    height: 535px;
+.right {
+  width: 642px;
+  height: 535px;
 }
 @media screen and (max-width: 760px) {
-    .product{
-        display: none;
-    }
+  .product {
+    display: none;
+  }
 }
 /* DELIVERY */
-.bg-3{
-    background-color: #F7F7F7;
+.bg-3 {
+  background-color: #f7f7f7;
 }
-.delivery{
+.delivery {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
 }
-.icon{
+.icon {
   display: flex;
   gap: 20px;
 }
-@media screen and (max-width: 760px){
-  .delivery{
+@media screen and (max-width: 760px) {
+  .delivery {
     display: none;
   }
 }
 /* BAG'S */
-.bags{
-  display: flex;
-  padding: 70px;
-}
-.box{
-  display: flex;
-  background-color: #F5F5F5;
-  border-radius: 8px;
-  width: 30%;
+
+.bags {
+  width: 25%;
   gap: 40px;
+  display: flex;
+  padding: 30px;
 }
-.box img{
-  width: 100%;
+/* .boxOne{
+ background-image:url(./image/kisspng-handbag-baggage-hand-luggage-leather-women-bag-5acd4069b62017\ 1.svg);
+ background-color: #007878;
+} */
+/* Featured Products */
+.Featured-Products {
+  width: 30%;
+  gap: 80px;
+  display: flex;
+  padding: 50px;
+}
+.box-2 {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+.box-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.box-top button {
+  background-color: #43d167;
+  border: transparent;
+  width: 70px;
+  height: 30px;
+  border-radius: 8px;
+  color: white;
+}
+.heart {
+  color: red;
+  width: 22px;
+  height: 22px;
+}
+.box-bottom p {
+  line-height: 23px;
+  padding: 15px;
+}
+.money {
+  display: flex;
+  gap: 30px;
+}
+.red {
+  color: red;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+}
+.grey {
+  color: #363636;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+}
+.box-bottom button {
+  background-color: #f9f9f9;
+  width: 300px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 10px;
+}
+.box-top .sale {
+  background-color: red;
+}
+.box-2:hover {
+  background-color: transparent;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: all 1s;
+}
+.box-bottom button:hover {
+  background-color: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: transparent;
 }
 
-@media screen and (max-width: 760px){
-  .bags{
+@media screen and (max-width: 760px) {
+  .Featured-Products {
     display: block;
+    padding: 0 5%;
+    width: 100%;
+  }
+  .Featured-Products img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-/* Featured Products */
+/* Bestseller */
+.Bestseller {
+  width: 30%;
+  gap: 80px;
+  display: flex;
+  padding: 40px;
+}
+.text {
+  padding: 40px;
+}
+.bg-4 {
+  background-color: #fff7f7;
+}
+.DiscountProducts {
+  width: 30%;
+  gap: 80px;
+  display: flex;
+  padding: 40px;
+}
+/* FOOTTER */
+.bg-5 {
+  background-color: #f7f7f9;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+.footer-top input {
+  width: 504px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px transparent;
+  padding: 20px;
+}
+.footer-center {
+  display: flex;
+  justify-content: space-between;
+}
+.email {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.telephone {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.footer-center img {
+  width: 150px;
+  height: 30px;
+}
+.snobella p {
+  line-height: 27px;
+}
+.shop nav ul li a {
+  color: black;
+}
+.shop nav ul li{
+  padding: 7px;
+}
+.company nav ul li{
+  padding: 7px;
+}
+.company nav ul li a{
+  color: black;
+}
+.help nav ul li{
+  padding: 7px;
+}
+.help nav ul li a{
+  color: black;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.glass{
+  display: flex;
+  gap: 10px;
+}
